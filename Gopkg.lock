@@ -9,20 +9,9 @@
   revision = "66b9c49e59c6c48f0ffce28c2d8b8a5678502c6d"
   version = "v1.4.0"
 
-[[projects]]
-  branch = "server"
-  digest = "1:864408fbcaa66859d11c7abfdac9854668582313b3a15df654ef15d9f161fe80"
-  name = "github.com/selvaprvn/graphql"
-  packages = ["."]
-  pruneopts = "UT"
-  revision = "8dc57236d423238775f05922ce0b62c4881bab47"
-
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = [
-    "github.com/gorilla/websocket",
-    "github.com/selvaprvn/graphql",
-  ]
+  input-imports = ["github.com/gorilla/websocket"]
   solver-name = "gps-cdcl"
   solver-version = 1

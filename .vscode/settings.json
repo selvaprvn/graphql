@@ -1,8 +1,8 @@
 {
-    "go.gopath": "${workspaceFolder}/../../",
+    "go.gopath": "C:\\data\\dev\\mine\\golang",
     "terminal.integrated.env.windows": {
-        "GOPATH":"${workspaceFolder}/../../",
-        "PATH":"${env:PATH};${workspaceFolder}/../../bin"
+        "GOPATH":"C:\\data\\dev\\mine\\golang",
+        "PATH":"${env:PATH};C:\\data\\dev\\mine\\golang\\bin"
     },
     "terminal.integrated.env.osx": {
         "GOPATH":"${workspaceFolder}/../../",
