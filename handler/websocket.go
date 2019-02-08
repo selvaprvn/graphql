@@ -2,11 +2,12 @@ package handler
 
 import (
 	"context"
-	"graphql"
+
 	"log"
 	"net/http"
 
 	"github.com/gorilla/websocket"
+	"github.com/selvaprvn/graphql"
 )
 
 // MiddlewareFunc middleware

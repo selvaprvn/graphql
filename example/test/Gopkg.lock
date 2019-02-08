@@ -11,9 +11,12 @@
 
 [[projects]]
   branch = "server"
-  digest = "1:864408fbcaa66859d11c7abfdac9854668582313b3a15df654ef15d9f161fe80"
+  digest = "1:420548d2c0463871750305f86d1c3d76e2a317c82c73dcbfb181ddfd23678aed"
   name = "github.com/selvaprvn/graphql"
-  packages = ["."]
+  packages = [
+    ".",
+    "handler",
+  ]
   pruneopts = "UT"
   revision = "8dc57236d423238775f05922ce0b62c4881bab47"
 
@@ -21,8 +24,8 @@
   analyzer-name = "dep"
   analyzer-version = 1
   input-imports = [
-    "github.com/gorilla/websocket",
     "github.com/selvaprvn/graphql",
+    "github.com/selvaprvn/graphql/handler",
   ]
   solver-name = "gps-cdcl"
   solver-version = 1
