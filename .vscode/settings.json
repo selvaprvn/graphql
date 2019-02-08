@@ -1,0 +1,11 @@
+{
+    "go.gopath": "${workspaceFolder}/../../",
+    "terminal.integrated.env.windows": {
+        "GOPATH":"${workspaceFolder}/../../",
+        "PATH":"${env:PATH};${workspaceFolder}/../../bin"
+    },
+    "terminal.integrated.env.osx": {
+        "GOPATH":"${workspaceFolder}/../../",
+        "PATH":"${env:PATH};${workspaceFolder}/../../bin"
+    }
+}
