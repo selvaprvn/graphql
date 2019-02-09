@@ -21,11 +21,13 @@ type httpHandler struct {
 }
 
 func (h *httpHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
-	defer r.Body.Close()
+	if r.Method == "POST" {
+		defer r.Body.Close()
 
-	msg, err := h.schema.Handle(r.Body)
-	if err != nil {
-		msg = graphql.NewErrorMsg(err)
+		msg, err := h.schema.Handle(r.Body)
+		if err != nil {
+			msg = graphql.NewErrorMsg(err)
+		}
+		json.NewEncoder(w).Encode(msg)
 	}
-	json.NewEncoder(w).Encode(msg)
 }

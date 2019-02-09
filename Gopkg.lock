@@ -9,9 +9,37 @@
   revision = "66b9c49e59c6c48f0ffce28c2d8b8a5678502c6d"
   version = "v1.4.0"
 
+[[projects]]
+  digest = "1:1782a9b9ef40205e55fc0bb2f467ae1f316c08ff2d9bc4cfc9d1091b71c7327f"
+  name = "github.com/graphql-go/graphql"
+  packages = [
+    "gqlerrors",
+    "language/ast",
+    "language/kinds",
+    "language/lexer",
+    "language/location",
+    "language/parser",
+    "language/source",
+  ]
+  pruneopts = "UT"
+  revision = "08943645bf265d192b32f2100cdff2428f7ae7c5"
+  version = "v0.7.7"
+
+[[projects]]
+  digest = "1:b0c25f00bad20d783d259af2af8666969e2fc343fa0dc9efe52936bbd67fb758"
+  name = "github.com/rs/cors"
+  packages = ["."]
+  pruneopts = "UT"
+  revision = "9a47f48565a795472d43519dd49aac781f3034fb"
+  version = "v1.6.0"
+
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  input-imports = ["github.com/gorilla/websocket"]
+  input-imports = [
+    "github.com/gorilla/websocket",
+    "github.com/graphql-go/graphql/language/parser",
+    "github.com/rs/cors",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1

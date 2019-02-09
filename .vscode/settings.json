@@ -1,5 +1,4 @@
 {
-    "go.gopath": "C:\\data\\dev\\mine\\golang",
     "terminal.integrated.env.windows": {
         "GOPATH":"C:\\data\\dev\\mine\\golang",
         "PATH":"${env:PATH};C:\\data\\dev\\mine\\golang\\bin"
